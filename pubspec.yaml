@@ -1,4 +1,3 @@
-
 name: myapplicationflutter
 description: A new Flutter project.
 
@@ -10,8 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  torch_light: ^2.1.0
+  torch_light: ^1.1.0
 
 dev_dependencies:
   flutter_test:
