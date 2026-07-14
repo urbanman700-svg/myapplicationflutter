@@ -1,4 +1,4 @@
-""
+
 name: myapplicationflutter
 description: A new Flutter project.
 
@@ -18,4 +18,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-""
