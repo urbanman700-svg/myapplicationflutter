@@ -1,29 +1,11 @@
-""
+
+// Other configurations...
+
 android {
-    compileSdkVersion 33
+  // Other configurations...
 
-    defaultConfig {
-        applicationId "com.example.myapplicationflutter"
-        minSdkVersion 21
-        targetSdkVersion 33
-        versionCode 1
-        versionName "1.0"
-        multiDexEnabled true
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig signingConfigs.debug
-        }
-    }
+  defaultConfig {
+    // Other configurations...
+    multiDexEnabled true
+  }
 }
-
-flutter {
-    source '../..'
-}
-
-apply plugin: 'kotlin-android'
-""
