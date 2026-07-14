@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var cameraManager: CameraManager
+    private lateinit var cameraManager:  CameraManager
     private lateinit var torchButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
