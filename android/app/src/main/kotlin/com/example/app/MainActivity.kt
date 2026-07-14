@@ -2,10 +2,13 @@ import android.hardware.camera2.CameraManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
+import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var cameraManager:  CameraManager
+    private lateinit var cameraManager: CameraManager
     private lateinit var torchButton: Button
+    private var isTorchOn = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,12 +18,14 @@ class MainActivity : AppCompatActivity() {
         torchButton = findViewById(R.id.torch_button)
 
         torchButton.setOnClickListener {
-            if (torchButton.text == "Torch On") {
+            if (isTorchOn) {
                 turnOffTorch()
-                torchButton.text = "Torch Off"
+                torchButton.text = "Turn On Torch"
+                isTorchOn = false
             } else {
                 turnOnTorch()
-                torchButton.text = "Torch On"
+                torchButton.text = "Turn Off Torch"
+                isTorchOn = true
             }
         }
     }
